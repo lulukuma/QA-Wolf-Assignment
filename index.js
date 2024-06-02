@@ -41,6 +41,7 @@ async function saveHackerNewsArticles() {
       article: page.getElementByClass("titleline"),
      // url: '';
     }
+      console.log(csvmaker(data));
   }
   
 
