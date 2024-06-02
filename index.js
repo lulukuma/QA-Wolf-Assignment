@@ -36,11 +36,11 @@ async function saveHackerNewsArticles() {
   
   // locate title and url of first ten articles
   const data = {
-    for (let step = 0; step < 9; step++) {
-      id: (step+1),
+    //for (let step = 0; step < 9; step++) {
+      id: (1),
       article: page.getElementByClass("titleline"),
      // url: '';
-    }
+    //}
       console.log(csvmaker(data));
   }
   
@@ -48,6 +48,9 @@ async function saveHackerNewsArticles() {
   // download to csv
   
 }
+
+const btn = document.getElementById('action');
+btn.addEventListener('click', get);
 
 (async () => {
   await saveHackerNewsArticles();
